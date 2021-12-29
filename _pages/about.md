@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+description: wall-KHAN gee-RICK
 
 profile:
   align: right
