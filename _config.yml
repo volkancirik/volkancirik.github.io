@@ -62,8 +62,8 @@ rss_icon: false
 contact_note: >
 
 
-google_analytics: UA-216048956-1
-#panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+google_analytics: UA-216048956-1 # google analytics
+panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -230,7 +230,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    true  # enables google analytics
+enable_google_analytics: true  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_mansory:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)
