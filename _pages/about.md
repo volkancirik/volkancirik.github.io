@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: pronounciation: wall-KHAN gee-RICK or wɔl kɑn ʤi rɪk
+description: pronounciation: wall-KHAN gee-RICK
 
 profile:
   align: right
