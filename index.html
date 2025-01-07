@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkan Cirik</title>
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            position: relative;
+            width: 800px;  /* Match your screenshot width */
+        }
+        .screenshot {
+            width: 100%;
+            height: auto;
+        }
+        .link-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Position each link absolutely to match screenshot */
+        .scholar-link {
+            position: absolute;
+            top: 200px;  /* Adjust these values to match your screenshot */
+            left: 24px;
+            width: 150px;
+            height: 20px;
+        }
+        .github-link {
+            position: absolute;
+            top: 220px;
+            left: 24px;
+            width: 70px;
+            height: 20px;
+        }
+        .linkedin-link {
+            position: absolute;
+            top: 240px;
+            left: 24px;
+            width: 85px;
+            height: 20px;
+        }
+        .twitter-link {
+            position: absolute;
+            top: 260px;
+            left: 24px;
+            width: 70px;
+            height: 20px;
+        }
+        .ohnotype-link {
+            position: absolute;
+            top: 335px;
+            left: 430px;
+            width: 115px;
+            height: 20px;
+        }
+        /* Make links invisible but clickable */
+        .link-layer a {
+            display: block;
+            text-decoration: none;
+            color: transparent;
+        }
+        /* Optional: show link areas while positioning 
+        .link-layer a:hover {
+            background: rgba(255,0,0,0.2);
+        } */
+    </style>
 </head>
 <body>
-    <img src="screenshot.png" alt="Volkan Cirik's personal website. And yes this is a screenshot!" style="max-width: 50%; height: auto;">
+    <div class="container">
+        <img class="screenshot" src="screenshot.png" alt="Personal webpage">
+        <div class="link-layer">
+            <a class="scholar-link" target="_blank" href="https://scholar.google.com/citations?user=E6vCXjkAAAAJ&hl=en"></a>
+            <a class="github-link" target="_blank" href="https://github.com/volkancirik"></a>
+            <a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/volkan-cirik/"></a>
+            <a class="twitter-link" target="_blank" href="https://twitter.com/volkancirik"></a>
+            <a class="ohnotype-link" target="_blank" href="https://ohnotype.co/fonts/vulf"></a>
+        </div>
+    </div>
 </body>
 </html>
