@@ -40,11 +40,10 @@
             width: 100%;
         }
 
-        /* This maintains the image's aspect ratio */
         .image-container::before {
             content: "";
             display: block;
-            padding-top: 126.62%; /* (1950/1540 * 100) for mobile - adjust this ratio based on your actual image */
+            padding-top: 126.62%; 
         }
 
         .screenshot {
@@ -83,10 +82,9 @@
             background: rgba(255,0,0,0.2);
         }
         
-        /* Desktop styles */
         @media (min-width: 768px) {
             .image-container::before {
-                padding-top: 100%; /* Adjust based on desktop image aspect ratio */
+                padding-top: 100%; 
             }
             .screenshot-mobile {
                 display: none;
@@ -126,7 +124,6 @@
             }
         }
 
-        /* Mobile styles */
         @media (max-width: 767px) {
             .screenshot-desktop {
                 display: none;
@@ -134,7 +131,7 @@
             .screenshot-mobile {
                 display: block;
             }
-            /* Below are example percentages - you'll need to calculate these based on your mobile image */
+
             .scholar-link {
                 top: 77.5%;
                 left: 3.5%;
@@ -167,7 +164,6 @@
             }
         }
 
-        /* Hide semantic content but keep it accessible for screen readers */
         .sr-only {
             position: absolute;
             width: 1px;
@@ -185,8 +181,7 @@
         <main class="image-container">
             <!-- Hidden semantic content for SEO -->
             <section class="sr-only">
-                <h1>Volkan Cirik</h1>
-                <p>Welcome to my academic webpage. I am a researcher in Natural Language Processing and Machine Learning.</p>
+                <p>Welcome to my personal webpage. I am a researcher in Natural Language Processing and Machine Learning.</p>
                 <nav>
                     <h2>Professional Profiles</h2>
                     <ul>
