@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personal Webpage</title>
+    <title>Volkan Cirik's Personal Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Volkan Cirik's personal webpage. Research in Natural Language Processing, Machine Learning, and Artificial Intelligence.">
+    <meta name="keywords" content="Volkan Cirik, NLP, Natural Language Processing, Machine Learning, Multimodal Machine Learning, AI, Academic Research, Grounded Language Understanding">
+    <meta name="author" content="Volkan Cirik">
+    
+    <meta property="og:title" content="Volkan Cirik - Personal Webpage">
+    <meta property="og:description" content="Volkan Cirik's personal webpage. Research in Natural Language Processing, Machine Learning, and Artificial Intelligence.">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:url" content="https://volkancirik.com">
+    <meta property="og:image" content="vc_icon.jpg">
+    <meta property="og:image:type" content="image/jpeg">
     <style>
         body {
             margin: 0;
@@ -11,11 +24,19 @@
         }
         .container {
             position: relative;
-            width: 800px;  
+            width: 100%;
+            max-width: 800px;
         }
         .screenshot {
             width: 100%;
             height: auto;
+            display: block;
+        }
+        .screenshot-desktop {
+            display: block;
+        }
+        .screenshot-mobile {
+            display: none;
         }
         .link-layer {
             position: absolute;
@@ -24,54 +45,118 @@
             width: 100%;
             height: 100%;
         }
-        .scholar-link {
-            position: absolute;
-            top: 210px;  
-            left: 24px;
-            width: 130px;
-            height: 20px;
-        }
-        .github-link {
-            position: absolute;
-            top: 230px;
-            left: 24px;
-            width: 55px;
-            height: 20px;
-        }
-        .linkedin-link {
-            position: absolute;
-            top: 250px;
-            left: 24px;
-            width: 75px;
-            height: 20px;
-        }
-        .twitter-link {
-            position: absolute;
-            top: 270px;
-            left: 24px;
-            width: 65px;
-            height: 20px;
-        }
-        .ohnotype-link {
-            position: absolute;
-            top: 340px;
-            left: 460px;
-            width: 105px;
-            height: 20px;
-        }
         .link-layer a {
             display: block;
             text-decoration: none;
             color: transparent;
+            position: absolute;
         }
         .link-layer a:hover {
             background: rgba(255,0,0,0.2);
+        }
+        
+        /* Desktop link positions */
+        @media (min-width: 768px) {
+            .scholar-link {
+                top: 210px;
+                left: 24px;
+                width: 130px;
+                height: 20px;
+            }
+            .github-link {
+                top: 230px;
+                left: 24px;
+                width: 55px;
+                height: 20px;
+            }
+            .linkedin-link {
+                top: 250px;
+                left: 24px;
+                width: 75px;
+                height: 20px;
+            }
+            .twitter-link {
+                top: 270px;
+                left: 24px;
+                width: 65px;
+                height: 20px;
+            }
+            .ohnotype-link {
+                top: 340px;
+                left: 460px;
+                width: 105px;
+                height: 20px;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 767px) {
+            .screenshot-desktop {
+                display: none;
+            }
+            .screenshot-mobile {
+                display: block;
+            }
+
+            .scholar-link {
+                top: 390px;    
+                left: 15px;
+                width: 120px;
+                height: 18px;
+            }
+            .github-link {
+                top: 410px;
+                left: 15px;
+                width: 54px;
+                height: 18px;
+            }
+            .linkedin-link {
+                top: 430px;
+                left: 15px;
+                width: 68px;
+                height: 18px;
+            }
+            .twitter-link {
+                top: 450px;
+                left: 15px;
+                width: 62px;
+                height: 18px;
+            }
+            .ohnotype-link {
+                top: 490px;
+                left: 312px;
+                width: 72px;
+                height: 14px;
+            }
+        }
+
+        /* Debug indicator */
+        .container::after {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+            background: black;
+            color: white;
+            font-family: monospace;
+            z-index: 1000;
+        }
+        @media (min-width: 768px) {
+            .container::after {
+                content: "Desktop View (≥768px)";
+            }
+        }
+        @media (max-width: 767px) {
+            .container::after {
+                content: "Mobile View (<768px)";
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img class="screenshot" src="screenshot.png" alt="Personal webpage">
+        <img class="screenshot screenshot-desktop" src="screenshot.png" alt="Personal webpage desktop version">
+        <img class="screenshot screenshot-mobile" src="screenshot_mobile.png" alt="Personal webpage mobile version">
         <div class="link-layer">
             <a class="scholar-link" target="_blank" href="https://scholar.google.com/citations?user=E6vCXjkAAAAJ&hl=en"></a>
             <a class="github-link" target="_blank" href="https://github.com/volkancirik"></a>
